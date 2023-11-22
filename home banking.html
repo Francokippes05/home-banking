@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Galicia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banco Galicia</h1>
+    </header>
+
+    <section>
+        <h2>Nuestra Misión</h2>
+        <p>En Banco Galicia, nos esforzamos por proporcionar servicios financieros de calidad, brindando seguridad y confianza a nuestros clientes.</p>
+    </section>
+
+    <section>
+        <h2>Servicios</h2>
+        <p>Ofrecemos una amplia gama de servicios, desde cuentas de ahorro y corriente hasta préstamos y asesoramiento financiero personalizado.</p>
+    </section>
+
+    <section>
+        <h2>Home Banking</h2>
+        <p>Accede a tus cuentas y realiza transacciones desde la comodidad de tu hogar con nuestro servicio de home banking. ¡Gestiona tu dinero de manera fácil y segura!</p>
+        <button onclick="iniciarSesion()">Iniciar Sesión</button>
+        <p id="mensajeBienvenida"></p>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos en cualquier momento:</p>
+        <p>Email: info@bancogalicia.com</p>
+        <p>Teléfono: 123-456-789</p>
+    </section>
+
+    <script>
+        function iniciarSesion() {
+            var mensaje = "¡Bienvenido! Has iniciado sesión en Home Banking.";
+            document.getElementById("mensajeBienvenida").innerHTML = mensaje;
+        }
+    </script>
+</body>
+</html>
